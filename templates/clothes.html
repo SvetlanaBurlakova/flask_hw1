@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Одежда{% endblock %}
+
+{% block header %}
+    <header>Категория одежда</header>
+{% endblock %}
+
+{% block content %}
+<div class="contents">
+        <h3>Одежда</h3>
+        <ul><li><a href="{{ url_for('jacket') }}">Куртка</a></li></ul>
+</div>
+{% endblock %}

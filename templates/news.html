@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости в мире IT</title>
+</head>
+<body>
+<table>
+        <tr>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Дата публикации</th>
+        </tr>
+        {% for new in news %}
+            <tr>
+                <td>{{ new['title'] }}</td>
+                <td>
+                    {{ new['description'] }}
+                </td>
+                <td>
+                    {{ new['date'] }}
+                </td>
+        {% endfor %}
+    </table>
+</body>
+</html>
